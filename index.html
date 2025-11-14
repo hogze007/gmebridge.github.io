@@ -1,161 +1,707 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GME Bridge — Your gateway to reliable German manufacturers.</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#eef3f7;--surface:#ffffff;--line:#d9e3ee;--text:#1f2933;--gold:#c6a15b;--gold-strong:#b1893f}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
-.container{max-width:1140px;margin:0 auto;padding:20px}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:10px 0}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{height:40px;width:auto;border-radius:6px;display:block}
-.logo-title{font-weight:800;letter-spacing:.2px}
-.nav a{color:var(--text);text-decoration:none;font-weight:600;margin:0 8px;opacity:.9}
-.nav a:hover{text-decoration:underline;opacity:1}
-.cta{display:inline-block;background:var(--gold);color:#111;font-weight:800;padding:10px 14px;border-radius:10px}
-.cta:hover{background:var(--gold-strong);text-decoration:none}
-.hero{padding:34px 0}
-.grid-2{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:960px){.grid-2{grid-template-columns:1.05fr .95fr}}
-.kicker{opacity:.8;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:12px}
-h1{margin:6px 0 10px;font-size:40px;line-height:1.15}
-.sub{opacity:.9;max-width:720px}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-.badge{border:1px solid var(--line);background:#f6f9fc;color:#0f172a;border-radius:999px;padding:5px 10px;font-size:12px}
-.slider{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;position:relative}
-.slides{display:flex;transition:transform .5s ease}
-.slide{min-width:100%;aspect-ratio:16/10;background:#dde7f0;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.slide img{width:100%;height:100%;object-fit:cover}
-.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.95);border:1px solid var(--line);width:38px;height:38px;border-radius:999px;display:grid;place-items:center;font-weight:800;color:#1f2933;cursor:pointer}
-.slider-btn:hover{filter:brightness(1.05)}
-.prev{left:10px}.next{right:10px}
-.dots{position:absolute;left:0;right:0;bottom:10px;display:flex;gap:8px;justify-content:center}
-.dot{width:8px;height:8px;border-radius:999px;border:1px solid var(--surface);background:rgba(0,0,0,.25)}
-.dot.active{background:var(--gold);border-color:var(--gold)}
-.section{margin:34px 0}
-h2{margin:0 0 10px;font-size:28px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
-.small{opacity:.8;font-size:14px}
-footer{border-top:1px solid var(--line);margin-top:40px;padding-bottom:24px}
-.hr-gold{height:3px;background:linear-gradient(90deg,var(--gold),#e2c58a,var(--gold));border:none;border-radius:999px;margin:8px 0 14px}
-</style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>GME Bridge — Your gateway to reliable German manufacturers.</title>
 
-<meta name="keywords" content="German manufacturers, Middle East distribution, industrial equipment, automatic doors, pumps, PLC, Germany export agency">
-<meta property="og:title" content="GME Bridge — Your gateway to reliable German manufacturers.">
-<meta property="og:description" content="We connect trusted German manufacturers with Middle Eastern partners. Partner scouting, coordination, and sustainable business growth.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://gmebridge.com/">
-<meta property="og:image" content="https://gmebridge.com/assets/logo.png">
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Organization",
- "name": "GME Bridge",
- "url": "https://gmebridge.com",
- "logo": "https://gmebridge.com/assets/logo.png",
- "description": "Business development company connecting German manufacturers with Middle Eastern partners.",
- "foundingLocation": "Ratingen, Germany",
- "contactPoint": [{
-   "@type": "ContactPoint",
-   "email": "info@gmebridge.com",
-   "contactType": "customer support",
-   "areaServed": ["DE","SA","AE","QA","KW","OM","BH"]
- }]
-}
-</script>
+  <meta name="description" content="GME Bridge connects Saudi distributors, EPCs and industrial buyers with reliable German manufacturers. We support you with supplier scouting, representation in front of German OEMs and structured communication for long-term partnerships."/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#eef3f7;
+      --surface:#ffffff;
+      --line:#d9e3ee;
+      --text:#1f2933;
+      --gold:#c6a15b;
+      --gold-strong:#b1893f;
+      --text-muted:#5b6977;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.6;
+    }
+    .container{
+      max-width:1140px;
+      margin:0 auto;
+      padding:20px;
+    }
+
+    /* HEADER */
+    header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(255,255,255,0.94);
+      backdrop-filter:saturate(140%) blur(8px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+      padding:10px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .brand img{
+      height:40px;
+      width:auto;
+      border-radius:6px;
+      display:block;
+    }
+    .logo-title{
+      font-weight:800;
+      letter-spacing:.2px;
+      font-size:15px;
+    }
+    .logo-sub{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      color:var(--text-muted);
+    }
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+    }
+    .links{
+      display:flex;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:4px;
+    }
+    .links a{
+      color:var(--text);
+      text-decoration:none;
+      font-weight:600;
+      margin:0 6px;
+      opacity:.9;
+      font-size:14px;
+    }
+    .links a:hover{
+      text-decoration:underline;
+      opacity:1;
+    }
+    .links a.active{
+      text-decoration:underline;
+      opacity:1;
+    }
+    .cta{
+      display:inline-block;
+      background:var(--gold);
+      color:#111;
+      font-weight:800;
+      padding:9px 14px;
+      border-radius:10px;
+      font-size:13px;
+      box-shadow:0 8px 22px rgba(0,0,0,.18);
+    }
+    .cta:hover{
+      background:var(--gold-strong);
+      text-decoration:none;
+    }
+
+    /* HERO */
+    .hero{
+      padding:32px 0 26px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:24px;
+    }
+    @media(min-width:960px){
+      .hero-grid{
+        grid-template-columns:1.1fr .9fr;
+      }
+    }
+    .kicker{
+      opacity:.8;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:12px;
+    }
+    h1{
+      margin:6px 0 10px;
+      font-size:36px;
+      line-height:1.15;
+    }
+    .sub{
+      opacity:.9;
+      max-width:700px;
+      font-size:15px;
+      color:var(--text-muted);
+    }
+    .hr-gold{
+      height:3px;
+      background:linear-gradient(90deg,var(--gold),#e2c58a,var(--gold));
+      border:none;
+      border-radius:999px;
+      margin:8px 0 14px;
+    }
+    .hero-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:12px;
+    }
+    .hero-badge{
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f6f9fc;
+      padding:4px 10px;
+      font-size:12px;
+      color:#0f172a;
+    }
+    .hero-cta-row{
+      margin-top:16px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+    .hero-note{
+      font-size:13px;
+      color:var(--text-muted);
+    }
+    .hero-note a{
+      color:var(--text);
+      text-decoration:underline;
+    }
+
+    /* SLIDER */
+    .slider-card{
+      background:var(--surface);
+      border-radius:16px;
+      border:1px solid var(--line);
+      padding:14px;
+      box-shadow:0 16px 40px rgba(15,23,42,.16);
+    }
+    .slider-title{
+      font-size:14px;
+      font-weight:600;
+      margin-bottom:4px;
+    }
+    .slider-sub{
+      font-size:13px;
+      color:var(--text-muted);
+      margin-bottom:8px;
+    }
+    .slider{
+      position:relative;
+      overflow:hidden;
+      border-radius:12px;
+      border:1px solid #dde5f0;
+      background:#000;
+    }
+    .slides{
+      display:flex;
+      transition:transform .6s ease;
+    }
+    .slide{
+      min-width:100%;
+      position:relative;
+    }
+    .slide img{
+      width:100%;
+      height:230px;
+      object-fit:cover;
+      display:block;
+    }
+    .slide-caption{
+      position:absolute;
+      left:10px;
+      bottom:10px;
+      background:rgba(0,0,0,.55);
+      color:#fff;
+      padding:4px 9px;
+      border-radius:999px;
+      font-size:11px;
+    }
+    .slider-dots{
+      display:flex;
+      justify-content:center;
+      gap:6px;
+      margin-top:8px;
+    }
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      border:none;
+      padding:0;
+      background:#cbd5e1;
+      cursor:pointer;
+    }
+    .dot.active{
+      background:var(--gold-strong);
+    }
+
+    /* SECTIONS */
+    .section{
+      margin:30px 0;
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:26px;
+    }
+    h3{
+      margin:0 0 6px;
+      font-size:18px;
+    }
+    .section-header{
+      margin-bottom:16px;
+      max-width:720px;
+    }
+    .section-header p{
+      margin:0;
+      opacity:.85;
+      font-size:14px;
+      color:var(--text-muted);
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:16px;
+    }
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:16px;
+    }
+    .card p{
+      margin:0 0 8px;
+      font-size:14px;
+      opacity:.9;
+      color:var(--text-muted);
+    }
+    .card ul{
+      margin:6px 0 0;
+      padding-left:18px;
+      font-size:14px;
+      opacity:.9;
+    }
+    .card li{
+      margin-bottom:4px;
+    }
+    .pill-label{
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-size:11px;
+      opacity:.75;
+      margin-bottom:4px;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    @media(min-width:900px){
+      .grid-2{
+        grid-template-columns:1.1fr .9fr;
+      }
+    }
+
+    .small{
+      opacity:.8;
+      font-size:13px;
+      color:var(--text-muted);
+    }
+
+    .cta-section{
+      background:var(--surface);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      margin-top:10px;
+      padding:24px 0;
+    }
+    .cta-inner{
+      display:grid;
+      grid-template-columns:1.4fr 1fr;
+      gap:16px;
+      align-items:center;
+    }
+    @media(max-width:800px){
+      .cta-inner{
+        grid-template-columns:1fr;
+      }
+    }
+    .cta-email{
+      margin-top:8px;
+      font-size:14px;
+      opacity:.85;
+    }
+
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:34px;
+      padding-bottom:24px;
+    }
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      font-size:14px;
+      opacity:.9;
+    }
+    .footer-inner a{
+      color:var(--text);
+      text-decoration:none;
+      margin-left:10px;
+    }
+    .footer-inner a:hover{
+      text-decoration:underline;
+    }
+  </style>
 </head>
 <body>
 <header>
   <div class="container nav">
     <div class="brand">
-      <img src="assets/logo.png" alt="GME Bridge logo"/><div class="logo-title">GME Bridge</div>
+      <img src="assets/logo.png" alt="GME Bridge logo"/>
+      <div class="brand-text">
+        <span class="logo-title">GME Bridge</span>
+        <span class="logo-sub">Your gateway to reliable German manufacturers</span>
+      </div>
     </div>
     <nav class="links">
-      <a href="#about">About</a><a href="#services">Services</a><a href="#sectors">Sectors</a><a href="#why">Why Us</a>
-      <a href="#contact" class="cta">Get in touch</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Impressum</a>
     </nav>
   </div>
 </header>
-<section class="hero">
-  <div class="container grid-2">
-    <div>
-      <div class="kicker">German manufacturers • Middle Eastern partnerships</div>
-      <h1>Your gateway to reliable German manufacturers.</h1>
-      <div class="hr-gold" aria-hidden="true"></div>
-      <p class="sub">GME Bridge connects trusted German suppliers with Middle Eastern distributors and investors — enabling seamless partnerships, transparent negotiations, and sustainable market growth.</p>
-      <div class="badges">
-        <span class="badge">Based in Germany</span><span class="badge">EN / DE / AR</span><span class="badge">Germany ↔ Middle East</span>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker">Saudi – German business bridge</div>
+        <h1>Helping Saudi companies work with reliable German manufacturers.</h1>
+        <div class="hr-gold" aria-hidden="true"></div>
+        <p class="sub">
+          GME Bridge supports Saudi distributors, EPCs and industrial end users in
+          finding and working with trustworthy German suppliers — especially in
+          automatic doors, building technology and industrial equipment.
+        </p>
+        <div class="hero-badges">
+          <span class="hero-badge">Supplier scouting & shortlists</span>
+          <span class="hero-badge">Representation in front of German OEMs</span>
+          <span class="hero-badge">Structured, bilingual communication</span>
+        </div>
+        <div class="hero-cta-row">
+          <a class="cta" href="services.html">Discover our services →</a>
+          <span class="hero-note">
+            Or learn more <a href="about.html">about GME Bridge</a>
+          </span>
+        </div>
       </div>
-      <p style="margin-top:14px"><a class="cta" href="mailto:info@gmebridge.com">Discover partnership opportunities →</a></p>
+
+      <!-- SLIDER -->
+      <div>
+        <div class="slider-card">
+          <div class="slider-title">German technology for Saudi projects</div>
+          <div class="slider-sub">
+            A visual snapshot of typical products we help with.
+          </div>
+          <div class="slider" aria-label="Key product examples">
+            <div class="slides" id="slides">
+              <div class="slide">
+                <img src="assets/slide1.jpg" alt="Automatic sliding doors in a modern building entrance"/>
+                <div class="slide-caption">Automatic sliding doors & entrance systems</div>
+              </div>
+              <div class="slide">
+                <img src="assets/slide2.jpg" alt="Industrial control panel with PLC and wiring"/>
+                <div class="slide-caption">PLC control panels & automation</div>
+              </div>
+              <div class="slide">
+                <img src="assets/slide3.jpg" alt="Water pumps and industrial pumping equipment in a plant room"/>
+                <div class="slide-caption">Pumps & industrial equipment</div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-dots">
+            <button class="dot active" data-slide="0" aria-label="Automatic doors"></button>
+            <button class="dot" data-slide="1" aria-label="PLC control panel"></button>
+            <button class="dot" data-slide="2" aria-label="Pumps"></button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="slider" aria-label="Product sectors slider">
-      <div class="slides">
-        <div class="slide"><img alt="German automatic doors" src="assets/slide1.jpg"/></div>
-        <div class="slide"><img alt="Industrial control panel (PLC)" src="assets/slide2.jpg"/></div>
-        <div class="slide"><img alt="German pumps and machinery" src="assets/slide3.jpg"/></div>
+  </section>
+
+  <!-- WHO WE SUPPORT -->
+  <section class="section" id="who">
+    <div class="container">
+      <div class="section-header">
+        <h2>Who we support</h2>
+        <p>
+          GME Bridge is built for Saudi companies that want German quality,
+          but also need clear communication, realistic expectations and a partner
+          who understands both sides.
+        </p>
       </div>
-      <button class="slider-btn prev" aria-label="Previous slide">&#8249;</button>
-      <button class="slider-btn next" aria-label="Next slide">&#8250;</button>
-      <div class="dots" role="tablist" aria-label="Slides">
-        <button class="dot active" aria-label="Slide 1"></button>
-        <button class="dot" aria-label="Slide 2"></button>
-        <button class="dot" aria-label="Slide 3"></button>
+
+      <div class="cards">
+        <div class="card">
+          <div class="pill-label">Saudi side</div>
+          <h3>Distributors & trading companies</h3>
+          <p>
+            You want to add reliable German brands to your portfolio or need
+            suppliers for specific projects in Saudi Arabia.
+          </p>
+          <ul>
+            <li>Support for building a strong supplier base</li>
+            <li>Options for long-term cooperation with OEMs</li>
+            <li>Bilingual communication during the whole process</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="pill-label">Projects</div>
+          <h3>EPCs & system integrators</h3>
+          <p>
+            You are responsible for delivering complete projects and need
+            German components and systems that fit into your scope.
+          </p>
+          <ul>
+            <li>Supplier options for doors, pumps and control systems</li>
+            <li>Better structured RFQs and responses from manufacturers</li>
+            <li>Technical coordination together with OEMs</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="pill-label">End users</div>
+          <h3>Industrial & building owners</h3>
+          <p>
+            You want long-lasting solutions and support beyond the first order,
+            especially for critical assets in buildings and plants.
+          </p>
+          <ul>
+            <li>Ideas for suitable German suppliers and technologies</li>
+            <li>Information to compare with existing solutions</li>
+            <li>Structured follow-up after the first projects</li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- HOW WE HELP (LINK TO SERVICES) -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-header">
+        <h2>How we help you work with German manufacturers</h2>
+        <p>
+          The home page is only a brief overview. Full details of our services
+          are described on the dedicated services page.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="pill-label">Step 1</div>
+          <h3>Supplier scouting & shortlists</h3>
+          <p>
+            We screen the market in Germany and Europe and give you a shortlist
+            of manufacturers that fit your technical and commercial needs.
+          </p>
+          <p class="small">
+            ➜ Read more on the <a href="services.html">Services page</a>.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="pill-label">Step 2</div>
+          <h3>Representation & communication</h3>
+          <p>
+            We present your company and project to manufacturers, coordinate
+            questions and help both sides keep the conversation clear.
+          </p>
+          <p class="small">
+            ➜ Details in the “Representation” section on <a href="services.html">Services</a>.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="pill-label">Step 3</div>
+          <h3>Structured RFQs & follow-up</h3>
+          <p>
+            We support you with structured enquiries, collection of offers and
+            follow-up until you and the manufacturer have a clear basis for a deal.
+          </p>
+          <p class="small">
+            ➜ Full overview on <a href="services.html">Services</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS OVERVIEW -->
+  <section class="section" id="sectors">
+    <div class="container">
+      <div class="section-header">
+        <h2>Typical sectors & product fields</h2>
+        <p>
+          We focus on areas where German manufacturers are strong and where Saudi
+          projects need dependable solutions.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Building & automation</h3>
+          <ul>
+            <li>Automatic sliding doors and façades</li>
+            <li>Access control and entrance systems</li>
+            <li>Industrial doors and loading solutions</li>
+          </ul>
+
+          <h3 style="margin-top:10px;">Pumps & process equipment</h3>
+          <ul>
+            <li>Water, booster and circulation pumps</li>
+            <li>Valves and industrial components</li>
+            <li>Heat exchangers and related equipment</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Control, infrastructure & environment</h3>
+          <ul>
+            <li>PLC control panels and automation</li>
+            <li>Traffic safety and road equipment</li>
+            <li>Smart city and outdoor lighting</li>
+            <li>Water treatment components and systems</li>
+          </ul>
+          <p class="small" style="margin-top:8px;">
+            ➜ For a more detailed overview, see the sector sections on
+            <a href="services.html">Services</a> and <a href="about.html">About</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Saudi companies work with GME Bridge</h2>
+        <p>
+          We stand between both sides — not as a replacement for the manufacturer
+          or your team, but as a practical bridge that keeps projects moving.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Independent & project-focused</h3>
+          <p>
+            We are not tied to one factory. This allows us to think from your
+            project first and then identify suitable German manufacturers.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Based in Germany, focused on Saudi Arabia</h3>
+          <p>
+            Close to German manufacturers and trade fairs, while fully oriented
+            towards Saudi projects, timelines and ways of working.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Bilingual & structured communication</h3>
+          <p>
+            We support English, Arabic and German communication so that technical
+            and commercial details are understood on both sides.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container cta-inner">
+      <div>
+        <h2>Ready to explore German options for your project?</h2>
+        <p>
+          Send us a short description of your application and what kind of
+          products or manufacturers you are looking for. We will come back
+          with clarifying questions and first ideas.
+        </p>
+      </div>
+      <div>
+        <a class="cta" href="contact.html">Contact GME Bridge →</a>
+        <p class="cta-email">
+          Or email us directly at <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="y"></span> GME Bridge. All rights reserved.</div>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="impressum.html">Impressum</a>
     </div>
   </div>
-</section>
-<section id="about" class="section"><div class="container"><h2>About GME Bridge</h2><div class="card">
-  <p><strong>Empowering connections between German manufacturers and Middle Eastern partners.</strong></p>
-  <p>GME Bridge is a Germany-based business development company that helps manufacturers and distributors build reliable cross-border partnerships.</p>
-  <p>We support our clients step by step — from identifying trustworthy partners and exchanging product information to facilitating communication and coordination throughout the cooperation process.</p>
-  <p class="small"><em>Note:</em> We do not provide legal or financial advisory services. Our role is to enable transparent, long-term, and mutually beneficial business relationships.</p>
-</div></div></section>
-<section id="services" class="section"><div class="container"><h2>Our Services</h2><div class="cards">
-  <div class="card"><h3>Partner Scouting & Introduction</h3><p>Identify reliable German manufacturers and connect them with suitable distributors and buyers across the Middle East — based on verified profiles and genuine business interests.</p></div>
-  <div class="card"><h3>Market Coordination & Communication</h3><p>Bridge language, time zone, and cultural differences to keep both sides aligned and efficient throughout negotiations.</p></div>
-  <div class="card"><h3>Agreement Facilitation</h3><p>Assist in drafting and reviewing preliminary commercial terms or agency proposals before both sides involve their legal advisors.</p></div>
-  <div class="card"><h3>Ongoing Support & Follow‑up</h3><p>Continue coordination, product information exchange, and relationship management to keep cooperation smooth and productive.</p></div>
-</div></div></section>
-<section id="sectors" class="section"><div class="container"><h2>Sectors We Serve</h2><div class="cards">
-  <div class="card"><h3>Building Technologies</h3><p>Automatic doors, glass façades, curtain wall systems, and architectural access solutions for modern buildings and infrastructure projects.</p></div>
-  <div class="card"><h3>Industrial Equipment</h3><p>Pumps, valves, compressors, PLC control systems, and measurement devices from trusted German and European manufacturers.</p></div>
-  <div class="card"><h3>HVAC & Energy Systems</h3><p>Air conditioning, ventilation and cooling systems, filters, and renewable energy solutions including solar technology.</p></div>
-  <div class="card"><h3>Smart Infrastructure & Safety</h3><p>Smart city technologies, parking and lighting systems, access control, and traffic safety equipment.</p></div>
-  <div class="card"><h3>Water & Environmental Solutions</h3><p>Water treatment systems, filtration technologies, and sustainable environmental materials for industrial and municipal applications.</p></div>
-  <div class="card"><h3>Medical & Laboratory Technologies</h3><p>Sterilization systems, laboratory instruments, and diagnostic equipment for healthcare and research facilities.</p></div>
-</div></div></section>
-<section id="why" class="section"><div class="container"><h2>Why Choose Us</h2><div class="cards">
-  <div class="card"><h3>Local Presence, Global Mindset</h3><p>Based in Germany with strong connections across the Middle East — we understand both markets, culturally and commercially.</p></div>
-  <div class="card"><h3>Verified Network</h3><p>We collaborate with trusted, certified German and European producers that meet international quality standards.</p></div>
-  <div class="card"><h3>Transparent Communication</h3><p>Professional bilingual communication ensures clarity and trust at every step.</p></div>
-  <div class="card"><h3>Step‑by‑Step Guidance</h3><p>From first contact to long‑term cooperation, we guide partners through a structured and efficient process.</p></div>
-  <div class="card"><h3>Long‑Term Partnership Focus</h3><p>We don’t just introduce — we help build business relationships that grow over time.</p></div>
-</div></div></section>
-<section id="contact" class="section"><div class="container"><h2>Contact</h2><div class="card">
-  <p><strong>Let’s start your next partnership.</strong></p>
-  <p>Whether you represent a manufacturer looking to expand abroad or a distributor searching for reliable European suppliers — we’re ready to help you connect.</p>
-  <p><strong>Email:</strong> <a href="mailto:info@gmebridge.com">info@gmebridge.com</a><br/><strong>Based in:</strong> Ratingen, Germany</p>
-  <p><a class="cta" href="mailto:info@gmebridge.com">Get in touch →</a></p>
-</div></div></section>
-<footer><div class="container"><div class="small">© <span id="y"></span> GME Bridge. All rights reserved.</div></div></footer>
-<script>
-const slides = document.querySelector('.slides');
-const dotEls = Array.from(document.querySelectorAll('.dot'));
-let idx = 0;
-function go(i){ idx = (i + dotEls.length) % dotEls.length;
-  slides.style.transform = 'translateX(' + (-idx*100) + '%)';
-  dotEls.forEach((d,di)=>d.classList.toggle('active', di===idx));
-}
-document.querySelector('.prev').addEventListener('click', ()=>go(idx-1));
-document.querySelector('.next').addEventListener('click', ()=>go(idx+1));
-dotEls.forEach((d,di)=>d.addEventListener('click', ()=>go(di)));
-setInterval(()=>go(idx+1), 7000);
-document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-</body></html>
+  <script>
+    // Dynamic year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Simple slider logic
+    const slides = document.querySelector('#slides');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+
+    function goToSlide(index){
+      current = index;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((d,i)=>d.classList.toggle('active', i === index));
+    }
+
+    dots.forEach(dot=>{
+      dot.addEventListener('click', ()=>{
+        const idx = parseInt(dot.getAttribute('data-slide'),10);
+        goToSlide(idx);
+      });
+    });
+
+    // Auto-rotate every 6 seconds
+    setInterval(()=>{
+      current = (current + 1) % 3;
+      goToSlide(current);
+    }, 6000);
+  </script>
+</footer>
+</body>
+</html>
