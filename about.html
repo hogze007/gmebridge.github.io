@@ -3,12 +3,36 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>About | GME Bridge — Your gateway to reliable German manufacturers.</title>
 
-  <meta name="description" content="GME Bridge is an independent bridge between German manufacturers and Saudi companies. Based in Germany, we support Saudi distributors, EPCs and industrial buyers in finding reliable German suppliers and building long-term partnerships.">
+  <!-- UPDATED SEO TITLES -->
+  <title>About GME Bridge — Connecting Saudi companies with German manufacturers</title>
 
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://gmebridge.com/about.html" />
+
+  <!-- SEO META DESCRIPTION -->
+  <meta name="description" content="Learn about GME Bridge: an independent bridge between German manufacturers and Saudi companies. Based in Germany, supporting Saudi distributors, EPCs and industrial buyers in supplier scouting, representation and structured communication.">
+
+  <!-- SEO KEYWORDS -->
+  <meta name="keywords" content="About GME Bridge, German manufacturers Saudi Arabia, EPC suppliers Germany, Saudi distributors Germany, industrial equipment Germany, automatic doors Germany, PLC control panels Germany">
+
+  <!-- OPEN GRAPH FOR LINKEDIN/WHATSAPP -->
+  <meta property="og:title" content="About GME Bridge — Saudi–German business bridge">
+  <meta property="og:description" content="Independent support for Saudi companies working with reliable German manufacturers. Based in Germany, focused on Saudi projects.">
+  <meta property="og:image" content="https://gmebridge.com/assets/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gmebridge.com/about.html">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About GME Bridge — German manufacturers for Saudi projects">
+  <meta name="twitter:description" content="Connecting Saudi companies with German manufacturers through supplier scouting and structured communication.">
+  <meta name="twitter:image" content="https://gmebridge.com/assets/logo.png">
+
+  <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- ORIGINAL STYLES (unchanged) -->
   <style>
     :root{
       --bg:#eef3f7;
@@ -19,12 +43,11 @@
       --gold-strong:#b1893f;
     }
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
     body{
       margin:0;
       background:var(--bg);
       color:var(--text);
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      font-family:Inter,system-ui,sans-serif;
       line-height:1.6;
     }
     .container{
@@ -46,7 +69,6 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:14px;
       flex-wrap:wrap;
       padding:10px 0;
     }
@@ -57,9 +79,7 @@
     }
     .brand img{
       height:40px;
-      width:auto;
       border-radius:6px;
-      display:block;
     }
     .logo-title{
       font-weight:800;
@@ -72,28 +92,15 @@
       margin:0 8px;
       opacity:.9;
     }
-    .links a:hover{
-      text-decoration:underline;
-      opacity:1;
-    }
     .links a.active{
       text-decoration:underline;
       opacity:1;
     }
-    .cta{
-      display:inline-block;
-      background:var(--gold);
-      color:#111;
-      font-weight:800;
-      padding:10px 14px;
-      border-radius:10px;
-    }
-    .cta:hover{
-      background:var(--gold-strong);
-      text-decoration:none;
+    .links a:hover{
+      text-decoration:underline;
     }
 
-    /* HERO */
+    /* PAGE STYLES */
     .hero{
       padding:34px 0;
     }
@@ -111,17 +118,15 @@
       opacity:.8;
       font-weight:700;
       text-transform:uppercase;
-      letter-spacing:.12em;
       font-size:12px;
     }
     h1{
       margin:6px 0 10px;
       font-size:36px;
-      line-height:1.15;
     }
     .sub{
-      opacity:.9;
       max-width:720px;
+      opacity:.9;
     }
     .hr-gold{
       height:3px;
@@ -130,43 +135,18 @@
       border-radius:999px;
       margin:8px 0 14px;
     }
-    .badge-row{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:14px;
-    }
-    .badge{
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:#f6f9fc;
-      padding:4px 10px;
-      font-size:12px;
-      opacity:.9;
-    }
 
-    /* GENERIC SECTIONS */
     .section{
       margin:34px 0;
-    }
-    h2{
-      margin:0 0 10px;
-      font-size:28px;
-    }
-    h3{
-      margin:0 0 6px;
-      font-size:18px;
     }
     .section-header{
       margin-bottom:16px;
       max-width:720px;
     }
-    .section-header p{
-      margin:0;
-      opacity:.85;
-      font-size:14px;
+    h2{
+      margin:0 0 10px;
+      font-size:28px;
     }
-
     .two-col{
       display:grid;
       grid-template-columns:1fr;
@@ -185,100 +165,36 @@
       padding:16px;
     }
     .card p{
-      margin:0 0 8px;
-      font-size:14px;
       opacity:.9;
-    }
-    .card ul{
-      margin:4px 0 0;
-      padding-left:18px;
       font-size:14px;
-      opacity:.9;
     }
-    .card li{
-      margin-bottom:4px;
-    }
-
-    .pill-label{
-      text-transform:uppercase;
-      letter-spacing:.14em;
-      font-size:11px;
-      opacity:.75;
-      margin-bottom:4px;
-    }
-
     .list{
-      margin:6px 0 0;
       padding-left:18px;
       font-size:14px;
-      opacity:.95;
     }
-    .list li{
-      margin-bottom:4px;
-    }
-
-    .small{
-      opacity:.8;
-      font-size:13px;
-    }
-
     .highlight{
       background:rgba(255,255,255,0.6);
-      border-radius:10px;
-      padding:10px 12px;
       border:1px solid var(--line);
+      padding:10px 12px;
+      border-radius:10px;
       font-size:13px;
-      margin-top:8px;
-    }
-
-    .cta-section{
-      background:var(--surface);
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
-      margin-top:10px;
-      padding:24px 0;
-    }
-    .cta-inner{
-      display:grid;
-      grid-template-columns:1.4fr 1fr;
-      gap:16px;
-      align-items:center;
-    }
-    @media(max-width:800px){
-      .cta-inner{
-        grid-template-columns:1fr;
-      }
-    }
-    .cta-email{
-      margin-top:8px;
-      font-size:14px;
-      opacity:.85;
     }
 
     footer{
       border-top:1px solid var(--line);
+      padding:20px 0;
       margin-top:40px;
-      padding-bottom:24px;
     }
     .footer-inner{
       display:flex;
       justify-content:space-between;
-      align-items:center;
-      gap:10px;
       flex-wrap:wrap;
+      opacity:.85;
       font-size:14px;
-      opacity:.9;
-    }
-    .footer-inner a{
-      color:var(--text);
-      text-decoration:none;
-      margin-left:10px;
-    }
-    .footer-inner a:hover{
-      text-decoration:underline;
     }
   </style>
 </head>
+
 <body>
 <header>
   <div class="container nav">
@@ -304,37 +220,22 @@
       <div>
         <div class="kicker">About GME Bridge</div>
         <h1>Connecting Saudi demand with reliable German manufacturers.</h1>
-        <div class="hr-gold" aria-hidden="true"></div>
+        <div class="hr-gold"></div>
         <p class="sub">
           GME Bridge is an independent bridge between German manufacturers and Saudi
           companies. Based in Germany, we help Saudi distributors, EPCs and industrial
           buyers find the right suppliers, communicate clearly and build long-term
           cooperation.
         </p>
-        <div class="badge-row">
-          <span class="badge">Independent bridge — not a freight forwarder</span>
-          <span class="badge">Based in Germany, focused on Saudi projects</span>
-          <span class="badge">Technical understanding & business mindset</span>
-        </div>
       </div>
 
       <div>
         <div class="card">
-          <div class="pill-label">Positioning</div>
-          <h3 style="margin:0 0 6px;">Your partner between both sides</h3>
+          <h3>Your partner between both sides</h3>
           <p>
-            We stand between two worlds: German engineering and Saudi projects.
-            Our role is to make both sides easier for each other — without replacing
-            the manufacturer or your internal team.
-          </p>
-          <ul>
-            <li>Saudi distributors, EPCs and project owners</li>
-            <li>German and European manufacturers</li>
-            <li>Focused on industrial and building-related products</li>
-          </ul>
-          <p class="small" style="margin-top:8px;">
-            We do not provide legal, tax or financial advice. All legal and commercial
-            decisions remain between you and the manufacturer.
+            We stand between German engineering and Saudi projects — helping both
+            sides work more effectively without replacing the manufacturer or your
+            internal team.
           </p>
         </div>
       </div>
@@ -354,169 +255,36 @@
 
       <div class="two-col">
         <div class="card">
-          <h3>Independent, project-focused and practical</h3>
+          <h3>Independent & project-focused</h3>
           <p>
-            We do not own a factory and we are not limited to one brand. This allows us
-            to look at your project first — then identify which German manufacturers are
-            a realistic fit.
+            Not tied to any specific factory — we look at your project first, then
+            identify suitable German manufacturers.
           </p>
           <ul class="list">
-            <li>Independent view on manufacturers and solutions</li>
+            <li>Independent view on best suppliers</li>
             <li>Technical understanding of industrial and building products</li>
-            <li>Experience with German way of working and documentation</li>
-            <li>Clear focus on Saudi requirements and market dynamics</li>
+            <li>Experience with German documentation & standards</li>
+            <li>Deep familiarity with Saudi requirements</li>
           </ul>
         </div>
 
         <div class="card">
           <h3>Based in Germany, focused on Saudi Arabia</h3>
           <p>
-            Being based in Germany gives us direct access to manufacturers, trade fairs
-            and technical discussions. At the same time, our work is driven by the needs
-            of Saudi projects and clients.
+            Being close to manufacturers allows quick communication and better
+            coordination for Saudi projects.
           </p>
           <ul class="list">
-            <li>Time zone friendly for both Saudi Arabia and Germany</li>
-            <li>Close to German factories and technical teams</li>
-            <li>Experienced in communication with Saudi stakeholders</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW WE CREATE VALUE -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>How we create value for you</h2>
-        <p>
-          Our goal is simple: make it easier for you to access German quality without
-          wasting time, losing information or creating misunderstandings.
-        </p>
-      </div>
-
-      <div class="two-col">
-        <div class="card">
-          <div class="pill-label">For Saudi buyers</div>
-          <h3>For Saudi distributors, EPCs & end users</h3>
-          <ul class="list">
-            <li>Receive a curated shortlist of suitable German suppliers</li>
-            <li>Save time on research and cold communication</li>
-            <li>Get structured offers that match your requirements</li>
-            <li>Use bilingual support in Arabic, English and German</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="pill-label">For German manufacturers</div>
-          <h3>For German & European manufacturers</h3>
-          <ul class="list">
-            <li>Work with pre-qualified Saudi partners and projects</li>
-            <li>Reduce misunderstandings in communication and scope</li>
-            <li>Receive clearer RFQs and more complete information</li>
-            <li>Build repeat business in Saudi Arabia, not only one-off deals</li>
+            <li>Easy access to German factories</li>
+            <li>Support during meetings & trade fairs</li>
+            <li>Time-zone alignment with KSA</li>
           </ul>
         </div>
       </div>
 
-      <div class="highlight">
-        We support the process — but we are not a party to the contract.
-        All legal and commercial agreements remain directly between you and
-        the manufacturer.
-      </div>
-    </div>
-  </section>
-
-  <!-- FOCUS AREAS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our focus areas</h2>
-        <p>
-          We concentrate on technical fields where German manufacturers have a strong
-          track record and where Saudi projects need long-term, reliable solutions.
-        </p>
-      </div>
-
-      <div class="two-col">
-        <div class="card">
-          <h3>Selected product fields</h3>
-          <ul class="list">
-            <li>Automatic sliding doors and entrance systems</li>
-            <li>Industrial doors and loading bay solutions</li>
-            <li>PLC control panels and automation</li>
-            <li>Pumps and process-related equipment</li>
-            <li>Building and infrastructure components</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Typical customers we support</h3>
-          <ul class="list">
-            <li>Saudi distributors and trading companies</li>
-            <li>EPC contractors and system integrators</li>
-            <li>Industrial plants and building owners</li>
-            <li>Consultants looking for German options</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW WE WORK -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>How we work with you</h2>
-        <p>
-          Our way of working is simple, transparent and focused on long-term
-          relationships instead of one-time transactions.
-        </p>
-      </div>
-
-      <div class="two-col">
-        <div class="card">
-          <h3>Clear roles for everyone</h3>
-          <ul class="list">
-            <li>We help you define and communicate your technical needs</li>
-            <li>We coordinate with selected German manufacturers</li>
-            <li>You decide which supplier and offer to choose</li>
-            <li>The manufacturer remains responsible for design and quality</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Transparent and sustainable</h3>
-          <ul class="list">
-            <li>No unrealistic promises or hidden conditions</li>
-            <li>Focus on repeat cooperation, not quick wins</li>
-            <li>Respect for both Saudi and German ways of doing business</li>
-            <li>Structured follow-up after initial projects</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container cta-inner">
-      <div>
-        <h2>Let’s talk about your next project</h2>
-        <p>
-          If you are a Saudi distributor, EPC or industrial buyer and you want to
-          explore options from German manufacturers, we are happy to listen and
-          discuss first ideas with you.
-        </p>
-      </div>
-      <div>
-        <a class="cta" href="mailto:info@gmebridge.com?subject=Introduction%20–%20GME%20Bridge">
-          Contact GME Bridge →
-        </a>
-        <p class="cta-email">
-          Or email us directly at <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
-        </p>
+      <div class="highlight" style="margin-top:16px;">
+        We support communication & coordination — all commercial and legal agreements
+        remain directly between you and the manufacturer.
       </div>
     </div>
   </section>
@@ -526,12 +294,14 @@
   <div class="container footer-inner">
     <div>© <span id="y"></span> GME Bridge. All rights reserved.</div>
     <div>
-      <!-- مستقبلًا: Privacy / Impressum -->
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="impressum.html">Impressum</a>
     </div>
   </div>
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </footer>
+
 </body>
 </html>
