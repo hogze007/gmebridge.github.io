@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Impressum | GME Bridge</title>
+
+  <meta name="description" content="Impressum / Legal Notice of GME Bridge — required information according to German law (§ 5 TMG).">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#eef3f7;
+      --surface:#ffffff;
+      --line:#d9e3ee;
+      --text:#1f2933;
+      --gold:#c6a15b;
+      --gold-strong:#b1893f;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.6;
+    }
+    .container{
+      max-width:1140px;
+      margin:0 auto;
+      padding:20px;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(255,255,255,0.92);
+      backdrop-filter:saturate(140%) blur(8px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      padding:10px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .brand img{
+      height:40px;
+      border-radius:6px;
+    }
+    .logo-title{
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+    .links a{
+      color:var(--text);
+      text-decoration:none;
+      font-weight:600;
+      margin:0 8px;
+      opacity:.9;
+      font-size:14px;
+    }
+    .links a:hover{
+      text-decoration:underline;
+      opacity:1;
+    }
+
+    .hero{
+      padding:34px 0 18px;
+    }
+    .kicker{
+      opacity:.8;
+      font-weight:700;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      font-size:12px;
+    }
+    h1{
+      margin:6px 0 10px;
+      font-size:32px;
+    }
+    .hr-gold{
+      height:3px;
+      background:linear-gradient(90deg,var(--gold),#e2c58a,var(--gold));
+      border:none;
+      border-radius:999px;
+      margin:8px 0 14px;
+    }
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      margin-bottom:18px;
+      font-size:14px;
+    }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:40px;
+      padding-bottom:24px;
+    }
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:10px;
+      font-size:14px;
+      opacity:.9;
+    }
+    .footer-inner a{
+      color:var(--text);
+      margin-left:10px;
+      text-decoration:none;
+    }
+    .footer-inner a:hover{
+      text-decoration:underline;
+    }
+
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="assets/logo.png" alt="GME Bridge logo"/>
+      <div class="logo-title">GME Bridge</div>
+    </div>
+    <nav class="links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#sectors">Sectors</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="impressum.html" class="active">Impressum</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="kicker">Legal notice</div>
+      <h1>Impressum</h1>
+      <div class="hr-gold"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="card">
+        <h2>Information according to § 5 TMG</h2>
+        <p>
+          <strong>GME Bridge</strong><br/>
+          Ratingen, Germany<br/>
+          Email: <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Responsible for content according to § 55 Abs. 2 RStV</h2>
+        <p>
+          Mohamed Hegazi<br/>
+          Ratingen, Germany<br/>
+          Email: <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Disclaimer</h2>
+        <h3>Liability for content</h3>
+        <p>
+          As a service provider, we are responsible for our own content on these
+          pages in accordance with general legislation. However, we are not
+          obligated to monitor transmitted or stored third-party information
+          or to investigate circumstances indicating illegal activity.
+        </p>
+
+        <h3>Liability for links</h3>
+        <p>
+          This website may contain links to external websites of third parties.
+          We have no influence on the content of those websites. Therefore, we
+          cannot assume any liability for such external content.
+        </p>
+
+        <h3>Copyright</h3>
+        <p>
+          The content and works on these pages are subject to German copyright
+          law. Any reproduction, editing or distribution outside the limits
+          of copyright requires written permission of the author.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="y"></span> GME Bridge. All rights reserved.</div>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+</body>
+</html>
