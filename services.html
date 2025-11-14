@@ -192,4 +192,466 @@
     .hero-pane-title{
       font-size:14px;
       font-weight:600;
-      margin
+      margin-bottom:4px;
+    }
+    .hero-pane-sub{
+      font-size:13px;
+      opacity:.9;
+      margin-bottom:8px;
+    }
+    .pill-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      margin-bottom:8px;
+      font-size:11px;
+    }
+    .pill{
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f6f9fc;
+      opacity:.9;
+    }
+    .checklist{
+      margin:0;
+      padding-left:16px;
+      font-size:13px;
+      opacity:.9;
+    }
+    .checklist li{
+      margin-bottom:4px;
+    }
+
+    /* SECTIONS */
+    .section{
+      margin:30px 0;
+    }
+    .section-header{
+      margin-bottom:16px;
+      max-width:720px;
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:26px;
+    }
+    h3{
+      margin:0 0 6px;
+      font-size:18px;
+    }
+    .section-header p{
+      margin:0;
+      opacity:.85;
+      font-size:14px;
+    }
+
+    .cards-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:16px;
+    }
+    .card{
+      background:var(--surface);
+      border-radius:14px;
+      border:1px solid var(--line);
+      padding:16px;
+    }
+    .card h3{
+      margin:0 0 6px;
+      font-size:17px;
+    }
+    .card p{
+      margin:0 0 8px;
+      font-size:14px;
+      opacity:.9;
+    }
+    .card ul{
+      margin:4px 0 0;
+      padding-left:18px;
+      font-size:14px;
+      opacity:.9;
+    }
+    .card li{
+      margin-bottom:4px;
+    }
+    .pill-label{
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-size:11px;
+      opacity:.75;
+      margin-bottom:4px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    @media(min-width:900px){
+      .two-col{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    .muted-card{
+      background:var(--surface);
+      border-radius:14px;
+      border:1px solid var(--line);
+      padding:16px;
+    }
+    .muted-card h3{
+      margin:0 0 6px;
+      font-size:17px;
+    }
+    .muted-card ul{
+      margin:4px 0 0;
+      padding-left:18px;
+      font-size:14px;
+      opacity:.9;
+    }
+
+    .steps-list{
+      margin:8px 0 0;
+      padding-left:18px;
+      font-size:14px;
+      opacity:.9;
+    }
+    .steps-list li{
+      margin-bottom:6px;
+    }
+    .steps-note{
+      font-size:13px;
+      opacity:.8;
+      margin-top:8px;
+    }
+
+    .cta-section{
+      background:var(--surface);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      margin-top:10px;
+      padding:24px 0;
+    }
+    .cta-inner{
+      display:grid;
+      grid-template-columns:1.4fr 1fr;
+      gap:16px;
+      align-items:center;
+    }
+    @media(max-width:800px){
+      .cta-inner{
+        grid-template-columns:1fr;
+      }
+    }
+    .cta-email{
+      margin-top:8px;
+      font-size:14px;
+      opacity:.85;
+    }
+
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:34px;
+      padding-bottom:24px;
+    }
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      font-size:14px;
+      opacity:.9;
+    }
+    .footer-inner a{
+      color:var(--text);
+      text-decoration:none;
+      margin-left:10px;
+    }
+    .footer-inner a:hover{
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="assets/logo.png" alt="GME Bridge logo"/>
+      <div class="logo-title">GME Bridge</div>
+    </div>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="kicker">Services for Saudi buyers & partners</div>
+        <h1>Structured support to work with German manufacturers.</h1>
+        <div class="hr-gold"></div>
+        <p class="sub">
+          GME Bridge helps Saudi distributors, EPCs and industrial end users
+          work efficiently with trusted German suppliers – from supplier
+          scouting and representation to procurement support, coordination
+          and bilingual meetings.
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">Representation in front of German OEMs</span>
+          <span class="hero-tag">Supplier scouting & shortlists</span>
+          <span class="hero-tag">RFQ & procurement support</span>
+        </div>
+        <div class="hero-cta-row">
+          <a class="cta" href="mailto:info@gmebridge.com?subject=Project%20enquiry%20–%20GME%20Bridge">
+            Discuss your project →
+          </a>
+          <span class="hero-note">
+            Or send your project outline to
+            <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
+          </span>
+        </div>
+      </div>
+
+      <aside class="hero-pane">
+        <div class="hero-pane-title">Designed around Saudi–German partnerships</div>
+        <div class="hero-pane-sub">
+          One partner in Germany who understands both sides – technically,
+          commercially and culturally.
+        </div>
+        <div class="pill-row">
+          <span class="pill">Saudi distributors & industrial buyers</span>
+          <span class="pill">German & European manufacturers</span>
+        </div>
+        <ul class="checklist">
+          <li>We are not a freight forwarder and not a legal advisor.</li>
+          <li>We focus on supplier scouting, coordination and communication.</li>
+          <li>Commercial and legal agreements remain between you and the manufacturer.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CORE SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What we do for you</h2>
+        <p>
+          Our services are tailored for Saudi companies that want high-quality
+          German technology without the communication gaps and uncertainty.
+          We stay by your side from first contact until the cooperation is running
+          smoothly.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="pill-label">Representation</div>
+          <h3>Representation in front of German manufacturers</h3>
+          <p>
+            We act as your point of contact in Germany. We present your company and
+            projects to suitable manufacturers and make sure both sides understand
+            each other – technically and commercially.
+          </p>
+          <ul>
+            <li>Present your company profile and applications</li>
+            <li>Introduce you to relevant German OEMs</li>
+            <li>Support structured follow-up and clarifications</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="pill-label">Supplier scouting</div>
+          <h3>Supplier scouting & shortlists</h3>
+          <p>
+            Instead of searching the internet for days, you receive a curated shortlist
+            of manufacturers that match your technical, quality and delivery expectations.
+          </p>
+          <ul>
+            <li>Market screening in Germany and Europe</li>
+            <li>Check certifications, references and experience</li>
+            <li>Clear overview of strengths for each manufacturer</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="pill-label">Commercial mediation</div>
+          <h3>Commercial mediation & deal support</h3>
+          <p>
+            We facilitate communication between your team and the manufacturer.
+            Final commercial and legal decisions always remain between you and
+            the supplier.
+          </p>
+          <ul>
+            <li>Clarifying technical and commercial questions</li>
+            <li>Coordinating revised offers and options</li>
+            <li>Helping both sides reach a clear, workable understanding</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="pill-label">Procurement</div>
+          <h3>Procurement & RFQ support</h3>
+          <p>
+            From RFQ to purchase order, we keep the process structured and transparent,
+            especially when you are comparing multiple German offers.
+          </p>
+          <ul>
+            <li>Preparing and sending structured RFQs</li>
+            <li>Collecting and comparing quotations</li>
+            <li>Aligning on delivery times and logistics expectations</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="pill-label">Quality & coordination</div>
+          <h3>Quality & technical coordination</h3>
+          <p>
+            We keep communication with the factory smooth. Technical responsibility
+            remains with the manufacturer and your engineers – we make sure information
+            flows clearly.
+          </p>
+          <ul>
+            <li>Coordinating technical submittals and datasheets</li>
+            <li>Supporting FAT arrangements and pre-shipment checks</li>
+            <li>Following up on open points until closure</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="pill-label">Meetings & language</div>
+          <h3>Meetings, translation & follow-up</h3>
+          <p>
+            Language should never stop a good project. We support you in English,
+            Arabic and German during calls, online meetings and factory visits.
+          </p>
+          <ul>
+            <li>Bilingual project calls and online meetings</li>
+            <li>Support at trade fairs and factory visits</li>
+            <li>Structured follow-up notes and action lists</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Key technical fields we support</h2>
+        <p>
+          We focus on proven German and European manufacturers in sectors that are
+          critical for buildings, infrastructure and industry in Saudi Arabia.
+        </p>
+      </div>
+
+      <div class="two-col">
+        <div class="muted-card">
+          <h3>Building & automation</h3>
+          <ul>
+            <li>Automatic sliding doors and glass façades</li>
+            <li>Access control and entrance systems</li>
+            <li>Industrial doors and loading solutions</li>
+          </ul>
+
+          <h3 style="margin-top:10px;">Pumps, HVAC & process equipment</h3>
+          <ul>
+            <li>Water, booster and circulation pumps</li>
+            <li>Valves and industrial components</li>
+            <li>Heat exchangers and related equipment</li>
+          </ul>
+        </div>
+
+        <div class="muted-card">
+          <h3>Control & infrastructure</h3>
+          <ul>
+            <li>PLC control panels and automation</li>
+            <li>Traffic safety and road equipment</li>
+            <li>Smart city and outdoor lighting solutions</li>
+          </ul>
+
+          <h3 style="margin-top:10px;">Water, environment & lab</h3>
+          <ul>
+            <li>Water treatment components and systems</li>
+            <li>Environmental monitoring equipment</li>
+            <li>Laboratory and sterilisation equipment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How we work with you</h2>
+        <p>
+          Our process is simple and transparent. You always know what the next step is
+          and who is responsible for what.
+        </p>
+      </div>
+
+      <ol class="steps-list">
+        <li><strong>1. Requirements call.</strong> We clarify your project scope, target sectors and timelines.</li>
+        <li><strong>2. Supplier shortlist.</strong> You receive a focused list of suitable German manufacturers.</li>
+        <li><strong>3. Introductions.</strong> We organise meetings and share the required technical information.</li>
+        <li><strong>4. RFQ & offers.</strong> We support you with structured enquiries and follow-up on quotations.</li>
+        <li><strong>5. Agreement between you and the manufacturer.</strong> Commercial and legal agreements are concluded directly between both parties.</li>
+        <li><strong>6. Ongoing coordination.</strong> We remain available for clarifications and future projects.</li>
+      </ol>
+
+      <p class="steps-note">
+        <strong>Important:</strong> We do not provide legal, tax or financial advice. Our role is to help both parties
+        communicate clearly and build sustainable, long-term business relationships.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Let’s explore German options for your next project</h2>
+        <p>
+          Share a short description of your application and required products.
+          We will come back with clarifying questions and first ideas for
+          suitable manufacturers.
+        </p>
+      </div>
+      <div>
+        <a class="cta" href="mailto:info@gmebridge.com?subject=Project%20enquiry%20–%20GME%20Bridge">
+          Contact GME Bridge →
+        </a>
+        <p class="cta-email">
+          Or email us directly at <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="y"></span> GME Bridge. All rights reserved.</div>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>
