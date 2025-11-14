@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact | GME Bridge — Your gateway to reliable German manufacturers.</title>
+
+  <meta name="description" content="Contact GME Bridge to discuss projects, supplier search and cooperation with German manufacturers. We support Saudi distributors, EPCs and industrial buyers with supplier scouting, coordination and communication.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#eef3f7;
+      --surface:#ffffff;
+      --line:#d9e3ee;
+      --text:#1f2933;
+      --gold:#c6a15b;
+      --gold-strong:#b1893f;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.6;
+    }
+    .container{
+      max-width:1140px;
+      margin:0 auto;
+      padding:20px;
+    }
+
+    /* HEADER */
+    header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(255,255,255,0.92);
+      backdrop-filter:saturate(140%) blur(8px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+      padding:10px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .brand img{
+      height:40px;
+      width:auto;
+      border-radius:6px;
+      display:block;
+    }
+    .logo-title{
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+    .links a{
+      color:var(--text);
+      text-decoration:none;
+      font-weight:600;
+      margin:0 8px;
+      opacity:.9;
+    }
+    .links a:hover{
+      text-decoration:underline;
+      opacity:1;
+    }
+    .links a.active{
+      text-decoration:underline;
+      opacity:1;
+    }
+    .cta{
+      display:inline-block;
+      background:var(--gold);
+      color:#111;
+      font-weight:800;
+      padding:10px 14px;
+      border-radius:10px;
+    }
+    .cta:hover{
+      background:var(--gold-strong);
+      text-decoration:none;
+    }
+
+    /* HERO */
+    .hero{
+      padding:34px 0;
+    }
+    .grid-2{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:24px;
+    }
+    @media(min-width:960px){
+      .grid-2{
+        grid-template-columns:1.1fr .9fr;
+      }
+    }
+    .kicker{
+      opacity:.8;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:12px;
+    }
+    h1{
+      margin:6px 0 10px;
+      font-size:36px;
+      line-height:1.15;
+    }
+    .sub{
+      opacity:.9;
+      max-width:720px;
+    }
+    .hr-gold{
+      height:3px;
+      background:linear-gradient(90deg,var(--gold),#e2c58a,var(--gold));
+      border:none;
+      border-radius:999px;
+      margin:8px 0 14px;
+    }
+    .badge-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:14px;
+    }
+    .badge{
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f6f9fc;
+      padding:4px 10px;
+      font-size:12px;
+      opacity:.9;
+    }
+
+    /* SECTIONS */
+    .section{
+      margin:34px 0;
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:28px;
+    }
+    h3{
+      margin:0 0 6px;
+      font-size:18px;
+    }
+    .section-header{
+      margin-bottom:16px;
+      max-width:720px;
+    }
+    .section-header p{
+      margin:0;
+      opacity:.85;
+      font-size:14px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    @media(min-width:900px){
+      .two-col{
+        grid-template-columns:1.05fr .95fr;
+      }
+    }
+
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:16px;
+    }
+    .card p{
+      margin:0 0 8px;
+      font-size:14px;
+      opacity:.9;
+    }
+    .card ul{
+      margin:4px 0 0;
+      padding-left:18px;
+      font-size:14px;
+      opacity:.9;
+    }
+    .card li{
+      margin-bottom:4px;
+    }
+
+    .small{
+      opacity:.8;
+      font-size:13px;
+    }
+    .highlight{
+      background:rgba(255,255,255,0.65);
+      border-radius:10px;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      font-size:13px;
+      margin-top:8px;
+    }
+
+    /* FORM */
+    .form-group{
+      margin-bottom:10px;
+    }
+    label{
+      display:block;
+      font-size:13px;
+      font-weight:600;
+      margin-bottom:4px;
+    }
+    input, textarea, select{
+      width:100%;
+      padding:8px 10px;
+      border-radius:8px;
+      border:1px solid var(--line);
+      font-family:inherit;
+      font-size:14px;
+    }
+    textarea{
+      min-height:120px;
+      resize:vertical;
+    }
+    .form-row{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+    @media(min-width:600px){
+      .form-row{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+    .btn-submit{
+      display:inline-block;
+      border:none;
+      cursor:pointer;
+      background:var(--gold);
+      color:#111;
+      font-weight:800;
+      padding:10px 16px;
+      border-radius:10px;
+      font-size:14px;
+    }
+    .btn-submit:hover{
+      background:var(--gold-strong);
+    }
+
+    .cta-section{
+      background:var(--surface);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      margin-top:10px;
+      padding:24px 0;
+    }
+    .cta-inner{
+      display:grid;
+      grid-template-columns:1.4fr 1fr;
+      gap:16px;
+      align-items:center;
+    }
+    @media(max-width:800px){
+      .cta-inner{
+        grid-template-columns:1fr;
+      }
+    }
+    .cta-email{
+      margin-top:8px;
+      font-size:14px;
+      opacity:.85;
+    }
+
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:40px;
+      padding-bottom:24px;
+    }
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      font-size:14px;
+      opacity:.9;
+    }
+    .footer-inner a{
+      color:var(--text);
+      text-decoration:none;
+      margin-left:10px;
+    }
+    .footer-inner a:hover{
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="assets/logo.png" alt="GME Bridge logo"/>
+      <div class="logo-title">GME Bridge</div>
+    </div>
+    <nav class="links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#sectors">Sectors</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container grid-2">
+      <div>
+        <div class="kicker">Contact</div>
+        <h1>Let’s talk about your next project.</h1>
+        <div class="hr-gold" aria-hidden="true"></div>
+        <p class="sub">
+          Whether you are a Saudi distributor, EPC or industrial buyer, you can use this
+          page to reach GME Bridge and discuss potential cooperation with German manufacturers.
+          A short, clear message is enough to start.
+        </p>
+        <div class="badge-row">
+          <span class="badge">Saudi distributors & EPCs</span>
+          <span class="badge">Industrial & building projects</span>
+          <span class="badge">German & European manufacturers</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>What to include in your message</h3>
+          <ul>
+            <li>Short description of your company and role</li>
+            <li>Project type or application (building, plant, infrastructure…)</li>
+            <li>Products or systems you are looking for</li>
+            <li>Rough timeline (tender, award, execution)</li>
+          </ul>
+          <p class="small" style="margin-top:8px;">
+            The more concrete your description is, the easier it is for us to propose
+            suitable German manufacturers for your case.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT DETAILS + FORM -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <!-- LEFT: details -->
+        <div class="card">
+          <h2>Contact details</h2>
+          <p>
+            You can reach GME Bridge via email. We are based in Germany and support
+            projects in Saudi Arabia and the wider Gulf region.
+          </p>
+          <p class="small">
+            <strong>Email:</strong>
+            <a href="mailto:info@gmebridge.com">info@gmebridge.com</a><br/>
+            <strong>Location:</strong> Ratingen, Germany<br/>
+            <strong>Time zone:</strong> Central European Time (CET/CEST)
+          </p>
+
+          <h3 style="margin-top:14px;">Typical situations we support</h3>
+          <ul>
+            <li>You are searching for reliable German manufacturers for a project.</li>
+            <li>You want to compare German options with existing suppliers.</li>
+            <li>You need support in communication and follow-up with a factory.</li>
+            <li>You plan long-term cooperation between your company and German OEMs.</li>
+          </ul>
+
+          <div class="highlight">
+            We do not offer legal, tax or financial advice. Our focus is on supplier
+            scouting, coordination and communication between you and manufacturers.
+          </div>
+        </div>
+
+        <!-- RIGHT: form -->
+        <div class="card">
+          <h2>Send us a short message</h2>
+          <p class="small">
+            This form uses your email program to send the message directly to
+            <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>.
+          </p>
+
+          <form action="mailto:info@gmebridge.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input id="name" name="Name" type="text" required />
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input id="company" name="Company" type="text" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="role">Your role</label>
+                <input id="role" name="Role" type="text" placeholder="e.g. Procurement, Sales, Management" />
+              </div>
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input id="country" name="Country" type="text" placeholder="e.g. Saudi Arabia" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="topic">Main topic</label>
+              <select id="topic" name="Topic">
+                <option value="supplier">Supplier search / new manufacturer</option>
+                <option value="project">Specific project / RFQ</option>
+                <option value="cooperation">Long-term cooperation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project / request description</label>
+              <textarea id="message" name="Message" placeholder="Please describe your application and what you are looking for."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send via email</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BOTTOM -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Prefer a direct email?</h2>
+        <p>
+          You can always contact us directly without using the form. A short,
+          clear email in English is fully sufficient to start the discussion.
+        </p>
+      </div>
+      <div>
+        <a class="cta" href="mailto:info@gmebridge.com?subject=Project%20enquiry%20–%20GME%20Bridge">
+          Email GME Bridge →
+        </a>
+        <p class="cta-email">
+          Send to <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="y"></span> GME Bridge. All rights reserved.</div>
+    <div>
+      <!-- مستقبلًا: Privacy / Impressum -->
+    </div>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>
