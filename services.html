@@ -1,229 +1,488 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <title>Services | GME Bridge – Your gateway to reliable German manufacturers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Services | GME Bridge — Your gateway to reliable German manufacturers.</title>
+  <meta name="description" content="GME Bridge supports Saudi distributors, EPCs and industrial buyers in working with reliable German manufacturers – from supplier scouting and commercial mediation to procurement support, coordination and bilingual meetings.">
 
-  <meta name="description" content="GME Bridge supports Saudi distributors, EPCs and industrial buyers in working with reliable German manufacturers – from supplier scouting and representation to procurement support, coordination and bilingual meetings.">
+  <meta name="keywords" content="German manufacturers, Saudi Arabia, industrial equipment, automatic doors, PLC control panel, pumps, export support, supplier scouting, commercial mediation, GME Bridge">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
-    :root{
-      --bg:#eef3f7;
-      --surface:#ffffff;
-      --line:#d9e3ee;
-      --text:#1f2933;
-      --gold:#c6a15b;
-      --gold-strong:#b1893f;
+    :root {
+      --bg: #171b24;          /* Graphite mist / dark */
+      --bg-soft: #1f2430;
+      --card: #222735;
+      --border: #2d3444;
+      --text: #f5f5f7;
+      --muted: #b7c0d4;
+      --gold: #c9a24f;
+      --gold-strong: #b48a3a;
+      --danger: #f97373;
     }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      line-height:1.6;
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
     }
-    .container{
-      max-width:1140px;
-      margin:0 auto;
-      padding:20px;
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #232a38 0, #151823 45%, #10131c 100%);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
     }
-    header{
-      position:sticky;
-      top:0;
-      z-index:20;
-      background:rgba(255,255,255,.92);
-      backdrop-filter:saturate(140%) blur(8px);
-      border-bottom:1px solid var(--line);
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      flex-wrap:wrap;
-      padding:10px 0;
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      text-decoration:none;
-      color:var(--text);
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(15, 18, 28, 0.94);
+      backdrop-filter: saturate(130%) blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     }
-    .brand img{
-      height:40px;
-      width:auto;
-      border-radius:6px;
-      display:block;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
     }
-    .logo-title{
-      font-weight:800;
-      letter-spacing:.2px;
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
     }
-    .nav-links a{
-      color:var(--text);
-      text-decoration:none;
-      font-weight:600;
-      margin:0 8px;
-      opacity:.9;
+
+    .brand img {
+      height: 40px;
+      width: auto;
+      display: block;
     }
-    .nav-links a:hover{
-      text-decoration:underline;
-      opacity:1;
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
     }
-    .nav-links a.active{
-      text-decoration:underline;
-      opacity:1;
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--text);
+      letter-spacing: 0.12em;
     }
-    .cta{
-      display:inline-block;
-      background:var(--gold);
-      color:#111;
-      font-weight:800;
-      padding:10px 14px;
-      border-radius:10px;
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
     }
-    .cta:hover{
-      background:var(--gold-strong);
-      text-decoration:none;
+
+    .nav-links a {
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 500;
     }
-    .hero{
-      padding:34px 0;
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
     }
-    .hero-inner{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:24px;
+
+    .nav-links a.active {
+      background: rgba(201, 162, 79, 0.1);
+      color: var(--gold);
+      font-weight: 600;
+      border: 1px solid rgba(201, 162, 79, 0.4);
     }
-    @media(min-width:960px){
-      .hero-inner{
-        grid-template-columns:1.1fr;
+
+    .nav-cta {
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-strong));
+      color: #111;
+      font-weight: 700;
+      font-size: 13px;
+      border: none;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      filter: brightness(1.06);
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 720px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
       }
     }
-    .kicker{
-      opacity:.8;
-      font-weight:700;
-      text-transform:uppercase;
-      letter-spacing:.12em;
-      font-size:12px;
+
+    /* HERO */
+
+    .hero {
+      padding: 40px 0 24px;
     }
-    h1{
-      margin:6px 0 10px;
-      font-size:36px;
-      line-height:1.15;
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 6.5fr) minmax(0, 5.5fr);
+      gap: 26px;
+      align-items: center;
     }
-    .sub{
-      opacity:.9;
-      max-width:720px;
-    }
-    .hr-gold{
-      height:3px;
-      background:linear-gradient(90deg,var(--gold),#e2c58a,var(--gold));
-      border:none;
-      border-radius:999px;
-      margin:8px 0 14px;
-    }
-    .section{
-      margin:34px 0;
-    }
-    h2{
-      margin:0 0 10px;
-      font-size:28px;
-    }
-    h3{
-      margin:0 0 6px;
-      font-size:20px;
-    }
-    .section-header{
-      margin-bottom:16px;
-      max-width:720px;
-    }
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:16px;
-    }
-    .card{
-      background:var(--surface);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:16px;
-    }
-    .card ul{
-      padding-left:18px;
-      margin:8px 0 0;
-    }
-    .card li{
-      margin-bottom:4px;
-    }
-    .grid-2{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:16px;
-    }
-    @media(min-width:900px){
-      .grid-2{
-        grid-template-columns:1fr 1fr;
+
+    @media (max-width: 880px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
       }
     }
-    .steps-list{
-      padding-left:18px;
-      margin:8px 0 0;
+
+    .kicker {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--muted);
+      font-weight: 600;
     }
-    .steps-list li{
-      margin-bottom:8px;
+
+    h1 {
+      margin: 8px 0 10px;
+      font-size: 34px;
+      line-height: 1.18;
     }
-    .small{
-      opacity:.8;
-      font-size:14px;
+
+    @media (min-width: 960px) {
+      h1 { font-size: 38px; }
     }
-    .cta-section{
-      background:var(--surface);
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
+
+    .hero-lead {
+      color: var(--muted);
+      max-width: 560px;
+      font-size: 15px;
     }
-    .cta-inner{
-      display:grid;
-      grid-template-columns:1.4fr 1fr;
-      gap:16px;
-      align-items:center;
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 14px 0 0;
+      font-size: 11px;
     }
-    @media(max-width:800px){
-      .cta-inner{
-        grid-template-columns:1fr;
+
+    .hero-tag {
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 4px 9px;
+      color: var(--muted);
+      background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.08), rgba(16, 20, 32, 0.8));
+    }
+
+    .hero-cta-row {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-strong));
+      color: #111;
+      font-weight: 700;
+      font-size: 14px;
+      border: none;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.55);
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.07);
+      transform: translateY(-1px);
+    }
+
+    .hero-note {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .hero-pane {
+      background: radial-gradient(circle at top, #262e3f 0, #181c28 48%, #11141f 100%);
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    }
+
+    .hero-pane-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .hero-pane-sub {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+
+    .pill {
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(7,10,18,0.8);
+      color: var(--muted);
+    }
+
+    .checklist {
+      list-style: none;
+      margin: 6px 0 0;
+      padding: 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .checklist li {
+      margin: 3px 0;
+    }
+
+    .checklist li::before {
+      content: "•";
+      color: var(--gold);
+      margin-right: 6px;
+    }
+
+    /* GENERIC SECTIONS */
+
+    .section {
+      padding: 24px 0;
+    }
+
+    .section-header {
+      margin-bottom: 14px;
+      max-width: 720px;
+    }
+
+    .section-header h2 {
+      margin: 0 0 6px;
+      font-size: 24px;
+    }
+
+    .section-header p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, rgba(32,38,55,0.96), rgba(18,21,32,0.96));
+      border-radius: 16px;
+      padding: 14px 14px 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 16px 42px rgba(0,0,0,0.55);
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+
+    .card p {
+      margin: 0 0 8px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 16px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .card li {
+      margin-bottom: 3px;
+    }
+
+    .pill-label {
+      display: inline-block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    /* TWO-COLUMN SECTION */
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .two-col {
+        grid-template-columns: minmax(0,1fr);
       }
     }
-    .cta-email{
-      margin-top:8px;
-      font-size:14px;
+
+    .muted-card {
+      background: radial-gradient(circle at top, #232938 0, #141824 48%, #10131d 100%);
+      border-radius: 16px;
+      padding: 14px 14px 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.5);
     }
-    footer{
-      border-top:1px solid var(--line);
-      margin-top:40px;
-      padding-bottom:24px;
+
+    .muted-card h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
     }
-    .footer-inner{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:10px;
-      flex-wrap:wrap;
-      font-size:14px;
-      opacity:.9;
+
+    .muted-card ul {
+      margin: 4px 0 0;
+      padding-left: 16px;
+      font-size: 13px;
+      color: var(--muted);
     }
-    .footer-inner a{
-      color:var(--text);
-      text-decoration:none;
-      margin-left:10px;
+
+    /* STEPS */
+
+    .steps-list {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: var(--muted);
     }
-    .footer-inner a:hover{
-      text-decoration:underline;
+
+    .steps-list li {
+      margin-bottom: 6px;
+    }
+
+    .steps-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    /* CTA */
+
+    .cta-section {
+      padding: 26px 0 34px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      background: radial-gradient(circle at top, rgba(65, 76, 108, 0.65), rgba(11, 14, 24, 0.95));
+    }
+
+    .cta-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+      gap: 18px;
+      align-items: center;
+    }
+
+    @media (max-width: 880px) {
+      .cta-inner {
+        grid-template-columns: minmax(0,1fr);
+      }
+    }
+
+    .cta-inner h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .cta-inner p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .cta-email {
+      margin-top: 6px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .cta-email a {
+      color: var(--gold);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 20px 0 26px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      margin-left: 10px;
+      color: var(--muted);
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
     }
   </style>
 </head>
@@ -231,69 +490,101 @@
 <header>
   <div class="container nav">
     <a href="index.html" class="brand">
-      <img src="assets/logo.png" alt="GME Bridge logo"/>
-      <div class="logo-title">GME Bridge</div>
+      <img src="assets/logo.png" alt="GME Bridge logo" />
+      <div class="brand-text">
+        <span class="brand-name">GME Bridge</span>
+        <span>Your gateway to reliable German manufacturers</span>
+      </div>
     </a>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="services.html" class="active">Services</a>
-      <a href="#sectors">Sectors</a>
-      <a href="mailto:info@gmebridge.com" class="cta">Get in touch</a>
+      <a href="mailto:info@gmebridge.com" class="nav-cta">Contact us</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <!-- Hero without slider -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
       <div>
         <div class="kicker">Services for Saudi buyers & partners</div>
-        <h1>Structured support for working with German manufacturers.</h1>
-        <div class="hr-gold" aria-hidden="true"></div>
-        <p class="sub">
-          GME Bridge helps Saudi distributors, EPCs and industrial end users work
-          efficiently with trusted German suppliers — from supplier scouting and
-          representation to procurement support, coordination and bilingual meetings.
+        <h1>Structured support to work with German manufacturers.</h1>
+        <p class="hero-lead">
+          GME Bridge helps Saudi distributors, EPCs and industrial end users
+          work efficiently with trusted German suppliers – from supplier
+          scouting and representation to procurement support, coordination
+          and bilingual meetings.
         </p>
-        <p style="margin-top:14px">
-          <a class="cta" href="mailto:info@gmebridge.com">Discuss your project →</a>
-        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">Representation in front of German OEMs</span>
+          <span class="hero-tag">Supplier scouting & shortlists</span>
+          <span class="hero-tag">RFQ & procurement support</span>
+        </div>
+        <div class="hero-cta-row">
+          <a href="mailto:info@gmebridge.com?subject=Project%20enquiry%20–%20GME%20Bridge" class="btn-primary">
+            Discuss your project
+          </a>
+          <span class="hero-note">
+            Or send your project outline to <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
+          </span>
+        </div>
       </div>
+
+      <aside class="hero-pane">
+        <div class="hero-pane-title">Designed around Saudi–German partnerships</div>
+        <div class="hero-pane-sub">
+          One partner in Germany who understands both sides – technically,
+          commercially and culturally.
+        </div>
+        <div class="pill-row">
+          <span class="pill">Saudi distributors & industrial buyers</span>
+          <span class="pill">German & European manufacturers</span>
+        </div>
+        <ul class="checklist">
+          <li>We are not a freight forwarder and not a legal advisor.</li>
+          <li>We focus on supplier scouting, coordination and communication.</li>
+          <li>Commercial and legal agreements remain between you and the manufacturer.</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <!-- Core services -->
+  <!-- CORE SERVICES -->
   <section class="section">
     <div class="container">
       <div class="section-header">
         <h2>What we do for you</h2>
         <p>
-          Our services are tailored for Saudi companies that want high-quality German
-          technology without the communication gaps and uncertainty. We stay by your side
-          from first contact until the cooperation is running smoothly.
+          Our services are tailored for Saudi companies that want high-quality
+          German technology without the communication gaps and uncertainty.
+          We stay by your side from first contact until the cooperation is running
+          smoothly.
         </p>
       </div>
 
-      <div class="cards">
-        <div class="card">
+      <div class="cards-grid">
+        <article class="card">
+          <div class="pill-label">Representation</div>
           <h3>Representation in front of German manufacturers</h3>
           <p>
-            We act as your point of contact in Germany. We present your company and projects
-            to suitable manufacturers and make sure both sides understand each other —
-            technically and commercially.
+            We act as your point of contact in Germany. We present your company and
+            projects to suitable manufacturers and make sure both sides understand
+            each other – technically and commercially.
           </p>
           <ul>
             <li>Present your company profile and applications</li>
             <li>Introduce you to relevant German OEMs</li>
             <li>Support structured follow-up and clarifications</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
+          <div class="pill-label">Supplier scouting</div>
           <h3>Supplier scouting & shortlists</h3>
           <p>
-            Instead of searching the internet for days, you receive a focused shortlist
+            Instead of searching the internet for days, you receive a curated shortlist
             of manufacturers that match your technical, quality and delivery expectations.
           </p>
           <ul>
@@ -301,22 +592,25 @@
             <li>Check certifications, references and experience</li>
             <li>Clear overview of strengths for each manufacturer</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
+          <div class="pill-label">Commercial mediation</div>
           <h3>Commercial mediation & deal support</h3>
           <p>
-            We facilitate communication between your team and the manufacturer. Final commercial
-            and legal decisions always remain between you and the supplier.
+            We facilitate communication between your team and the manufacturer.
+            Final commercial and legal decisions always remain between you and
+            the supplier.
           </p>
           <ul>
             <li>Clarifying technical and commercial questions</li>
             <li>Coordinating revised offers and options</li>
             <li>Helping both sides reach a clear, workable understanding</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
+          <div class="pill-label">Procurement</div>
           <h3>Procurement & RFQ support</h3>
           <p>
             From RFQ to purchase order, we keep the process structured and transparent,
@@ -327,13 +621,14 @@
             <li>Collecting and comparing quotations</li>
             <li>Aligning on delivery times and logistics expectations</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
+          <div class="pill-label">Quality & coordination</div>
           <h3>Quality & technical coordination</h3>
           <p>
             We keep communication with the factory smooth. Technical responsibility
-            remains with the manufacturer and your engineers — we make sure information
+            remains with the manufacturer and your engineers – we make sure information
             flows clearly.
           </p>
           <ul>
@@ -341,26 +636,27 @@
             <li>Supporting FAT arrangements and pre-shipment checks</li>
             <li>Following up on open points until closure</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
+          <div class="pill-label">Meetings & language</div>
           <h3>Meetings, translation & follow-up</h3>
           <p>
-            Language should never stop a good project. We support you in English, Arabic
-            and German during calls, online meetings and factory visits.
+            Language should never stop a good project. We support you in English,
+            Arabic and German during calls, online meetings and factory visits.
           </p>
           <ul>
             <li>Bilingual project calls and online meetings</li>
             <li>Support at trade fairs and factory visits</li>
             <li>Structured follow-up notes and action lists</li>
           </ul>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Focus sectors -->
-  <section id="sectors" class="section">
+  <!-- SECTORS -->
+  <section class="section">
     <div class="container">
       <div class="section-header">
         <h2>Key technical fields we support</h2>
@@ -370,8 +666,8 @@
         </p>
       </div>
 
-      <div class="grid-2">
-        <div class="card">
+      <div class="two-col">
+        <div class="muted-card">
           <h3>Building & automation</h3>
           <ul>
             <li>Automatic sliding doors and glass façades</li>
@@ -379,7 +675,7 @@
             <li>Industrial doors and loading solutions</li>
           </ul>
 
-          <h3>Pumps, HVAC & process equipment</h3>
+          <h3 style="margin-top:10px;">Pumps, HVAC & process equipment</h3>
           <ul>
             <li>Water, booster and circulation pumps</li>
             <li>Valves and industrial components</li>
@@ -387,7 +683,7 @@
           </ul>
         </div>
 
-        <div class="card">
+        <div class="muted-card">
           <h3>Control & infrastructure</h3>
           <ul>
             <li>PLC control panels and automation</li>
@@ -395,7 +691,7 @@
             <li>Smart city and outdoor lighting solutions</li>
           </ul>
 
-          <h3>Water, environment & lab</h3>
+          <h3 style="margin-top:10px;">Water, environment & lab</h3>
           <ul>
             <li>Water treatment components and systems</li>
             <li>Environmental monitoring equipment</li>
@@ -406,7 +702,7 @@
     </div>
   </section>
 
-  <!-- How we work -->
+  <!-- PROCESS -->
   <section class="section">
     <div class="container">
       <div class="section-header">
@@ -426,26 +722,31 @@
         <li><strong>6. Ongoing coordination.</strong> We remain available for clarifications and future projects.</li>
       </ol>
 
-      <p class="small" style="margin-top:8px;">
-        <em>Note:</em> We do not offer legal or financial advisory services. Our role is to facilitate transparent,
-        long-term and mutually beneficial business relationships.
+      <p class="steps-note">
+        <strong>Important:</strong> We do not provide legal, tax or financial advice. Our role is to help both parties
+        communicate clearly and build sustainable, long-term business relationships.
       </p>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="section cta-section">
+  <section class="cta-section">
     <div class="container cta-inner">
       <div>
         <h2>Let’s explore German options for your next project</h2>
         <p>
-          Share a short description of your application and required products. We will
-          come back with clarifying questions and first ideas for suitable manufacturers.
+          Share a short description of your application and required products.
+          We will come back with clarifying questions and first ideas for
+          suitable manufacturers.
         </p>
       </div>
       <div>
-        <a class="cta" href="mailto:info@gmebridge.com">Contact GME Bridge →</a>
-        <p class="cta-email">Or email us directly at <a href="mailto:info@gmebridge.com">info@gmebridge.com</a></p>
+        <a href="mailto:info@gmebridge.com?subject=Project%20enquiry%20–%20GME%20Bridge" class="btn-primary">
+          Contact GME Bridge
+        </a>
+        <p class="cta-email">
+          Or email us directly at <a href="mailto:info@gmebridge.com">info@gmebridge.com</a>
+        </p>
       </div>
     </div>
   </section>
@@ -453,15 +754,15 @@
 
 <footer>
   <div class="container footer-inner">
-    <div>© <span id="y"></span> GME Bridge. All rights reserved.</div>
-    <div>
-      <!-- Placeholders for future pages -->
+    <div>© <span id="year"></span> GME Bridge. All rights reserved.</div>
+    <div class="footer-links">
+      <!-- Optional future links -->
       <!-- <a href="privacy.html">Privacy Policy</a>
       <a href="impressum.html">Impressum</a> -->
     </div>
   </div>
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </footer>
 </body>
