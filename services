@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Services | GME Bridge – Your Gateway to Reliable German Manufacturers</title>
+
+  <meta name="description"
+        content="GME Bridge supports Saudi distributors and industrial buyers in working with reliable German manufacturers – from supplier scouting and commercial mediation to procurement support, quality coordination and bilingual meetings." />
+
+  <link rel="canonical" href="https://gmebridge.com/services.html" />
+
+  <!-- Use the same stylesheet as index.html -->
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="page-services">
+  <!-- Header / Navigation (keep structure similar to index.html) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo-gmebridge.png" alt="GME Bridge logo" class="brand-logo" />
+        <span class="brand-text">GME Bridge</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero hero-subpage">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Services for Saudi Buyers & Partners</h1>
+          <p>
+            GME Bridge connects Saudi distributors, EPCs and industrial end users
+            with reliable German and European manufacturers. We support you from
+            the first supplier search to successful delivery – always on your side,
+            bilingual and focused on long-term partnerships.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Discuss your project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Blocks -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>What We Do</h2>
+          <p>
+            Our services are designed for Saudi companies that want high-quality German
+            technology without the communication gaps and uncertainty.
+          </p>
+        </header>
+
+        <div class="grid grid-3">
+          <!-- 1. Representation -->
+          <article class="card service-card">
+            <h3>Representation in Front of German Manufacturers</h3>
+            <p>
+              We act as your local point of contact in Germany. We present your company
+              to suitable manufacturers, explain your project requirements, and make sure
+              both sides understand each other – commercially and technically.
+            </p>
+            <ul>
+              <li>Profile your company and target applications</li>
+              <li>Introduce you to relevant German OEMs</li>
+              <li>Support with follow-up and clarifications</li>
+            </ul>
+          </article>
+
+          <!-- 2. Supplier Scouting -->
+          <article class="card service-card">
+            <h3>Supplier Scouting & Shortlists</h3>
+            <p>
+              Instead of searching the internet for days, you receive a curated shortlist
+              of manufacturers that fit your technical, quality and delivery requirements.
+            </p>
+            <ul>
+              <li>Market screening in Germany and Europe</li>
+              <li>Evaluation of certifications, experience and references</li>
+              <li>Summary of key strengths for each manufacturer</li>
+            </ul>
+          </article>
+
+          <!-- 3. Commercial Mediation -->
+          <article class="card service-card">
+            <h3>Commercial Mediation & Deal Support</h3>
+            <p>
+              We support the communication between your team and the manufacturer during
+              enquiries and negotiations. Final commercial and legal decisions always
+              remain between you and the supplier.
+            </p>
+            <ul>
+              <li>Clarifying technical & commercial questions</li>
+              <li>Coordinating revised offers and options</li>
+              <li>Helping both sides reach a clear, workable agreement</li>
+            </ul>
+          </article>
+
+          <!-- 4. Procurement Support -->
+          <article class="card service-card">
+            <h3>Procurement & RFQ Support</h3>
+            <p>
+              From RFQ to purchase order, we keep the process structured and transparent,
+              especially when multiple offers and configurations are involved.
+            </p>
+            <ul>
+              <li>Preparing and sending structured RFQs</li>
+              <li>Collecting and comparing quotations</li>
+              <li>Coordinating delivery times and logistics expectations</li>
+            </ul>
+          </article>
+
+          <!-- 5. Quality & Technical Coordination -->
+          <article class="card service-card">
+            <h3>Quality & Technical Coordination</h3>
+            <p>
+              We help you stay close to the factory. We coordinate documentation and
+              communication so that quality expectations are clear on both sides.
+              Technical responsibility remains with the manufacturer and your engineers.
+            </p>
+            <ul>
+              <li>Coordinating technical submittals and datasheets</li>
+              <li>Supporting with FAT arrangements and pre-shipment checks</li>
+              <li>Follow-up on open points until closure</li>
+            </ul>
+          </article>
+
+          <!-- 6. Meetings, Translation & Follow-up -->
+          <article class="card service-card">
+            <h3>Meetings, Translation & Follow-Up</h3>
+            <p>
+              Language should never stop a good project. We support you in Arabic, English
+              and German during calls, online meetings and factory visits.
+            </p>
+            <ul>
+              <li>Bilingual project calls and online meetings</li>
+              <li>Support during trade fairs and factory visits</li>
+              <li>Structured follow-up notes and action lists</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Focus Sectors -->
+    <section class="section section-muted">
+      <div class="container">
+        <header class="section-header">
+          <h2>Key Technical Fields We Support</h2>
+          <p>
+            We focus on proven German and European manufacturers in sectors that are
+            critical for buildings, infrastructure and industry in Saudi Arabia.
+          </p>
+        </header>
+
+        <div class="grid grid-2">
+          <div>
+            <h3>Building & Automation</h3>
+            <ul>
+              <li>Automatic doors and glass façades</li>
+              <li>Access control and entrance systems</li>
+              <li>Industrial doors and loading solutions</li>
+            </ul>
+
+            <h3>Pumps, HVAC & Process Equipment</h3>
+            <ul>
+              <li>Water, booster and circulation pumps</li>
+              <li>Valves and industrial components</li>
+              <li>Heat exchangers and related equipment</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Control & Infrastructure</h3>
+            <ul>
+              <li>PLC control panels and automation</li>
+              <li>Traffic safety and road equipment</li>
+              <li>Smart city and outdoor lighting solutions</li>
+            </ul>
+
+            <h3>Water, Environment & Lab</h3>
+            <ul>
+              <li>Water treatment components and systems</li>
+              <li>Environmental monitoring equipment</li>
+              <li>Laboratory and sterilisation equipment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>How We Work With You</h2>
+        </header>
+
+        <ol class="steps-list">
+          <li>
+            <strong>1. Requirements call.</strong>
+            We clarify your project scope, target sectors, and timelines.
+          </li>
+          <li>
+            <strong>2. Supplier shortlist.</strong>
+            You receive a focused list of suitable German manufacturers.
+          </li>
+          <li>
+            <strong>3. Introductions.</strong>
+            We organise meetings and share the required technical information.
+          </li>
+          <li>
+            <strong>4. RFQ & offers.</strong>
+            We support you with structured enquiries and follow-up on quotations.
+          </li>
+          <li>
+            <strong>5. Agreement between you and the manufacturer.</strong>
+            Commercial and legal agreements are concluded directly between both parties.
+          </li>
+          <li>
+            <strong>6. Ongoing coordination.</strong>
+            We stay available for clarifications and future projects.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section cta-section">
+      <div class="container cta-inner">
+        <div>
+          <h2>Let’s explore German options for your next project</h2>
+          <p>
+            Send us a short description of your application and required products.
+            We will come back with questions and first ideas for suitable manufacturers.
+          </p>
+        </div>
+        <div>
+          <a href="contact.html" class="btn btn-primary">Contact GME Bridge</a>
+          <p class="cta-email">Or email us at <a href="mailto:info@gmebridge.com">info@gmebridge.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2025</span> GME Bridge. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+    <script>
+      // Simple year updater
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
